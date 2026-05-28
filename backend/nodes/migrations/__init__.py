@@ -1,3 +1,3 @@
 """
-Nodes app
+migrations module for nodes app
 """
