@@ -1,0 +1,127 @@
+.nodes-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.node-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.node-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.node-status {
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.node-status.online {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.node-status.offline {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.node-status.degraded {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.node-info p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.node-metrics {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.metric label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.metric-bar {
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.metric-fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.metric span {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.node-load {
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.node-load p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.no-nodes {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
